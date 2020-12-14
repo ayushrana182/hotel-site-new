@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hotel Sample Site</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <!-- JQUERY Navbar -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Navbar Toggler JS -->
+    <script>
+      $(function () {
+        $('.toggle').on('click', function () {
+          if ($('.item').hasClass('active')) {
+            $('.item').removeClass('active');
+          } else {
+            $('.item').addClass('active');
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- --------------Navbar-------- -->
+    <nav id="navbar">
+      <ul class="menu">
+        <li class="logo"><a href="#" class="item-a">Logo</a></li>
+        <li class="item"><a href="#" class="item-a">Home</a></li>
+        <li class="item"><a href="#" class="item-a">About</a></li>
+        <li class="item"><a href="#" class="item-a">Services</a></li>
+        <li class="item button secondary">
+          <a href="#" class="item-a">Log In</a>
+        </li>
+        <li class="item button secondary">
+          <a href="#" class="item-a">Sign Up</a>
+        </li>
+        <li class="toggle"><span class="bars"></span></li>
+      </ul>
+    </nav>
+
+    <section class="rooms">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Double Bedded Room</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </h3>
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="slider" id="main-slider">
+                    <div class="slider-wrapper">
+                      <div class="slide" data-image="images/rooms1.jpg"></div>
+                      <div class="slide" data-image="images/rooms2.jpg"></div>
+                      <div class="slide" data-image="images/rooms3.jpg"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="booking-form">
+                        <div class="row title">
+                          <div class="col-md-12">
+                            <h1>Your Reservation</h1>
+                          </div>
+                        </div>
+
+                        <form>
+                          <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  name="first_name"
+                                  id="first_name"
+                                  class="form-control input-sm"
+                                  placeholder="First Name"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  name="last_name"
+                                  id="last_name"
+                                  class="form-control input-sm"
+                                  placeholder="Last Name"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-12">
+                            <div class="form-group row">
+                              <div class="col-md-6">
+                                <label>Arrival Date</label>
+                              </div>
+                              <div class="col-md-6">
+                                <input
+                                  type="date"
+                                  name="Arrival date"
+                                  class="form-control"
+                                  placeholder="Arrival Date"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-12">
+                            <div class="form-group row">
+                              <div class="col-md-6">
+                                <label>Departure Date</label>
+                              </div>
+                              <div class="col-md-6">
+                                <input
+                                  type="date"
+                                  name="Arrival date"
+                                  class="form-control"
+                                  placeholder="Departure Date"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-12">
+                            <div class="form-group row">
+                              <div class="col-md-6">
+                                <label>Adults</label>
+                              </div>
+                              <div class="col-xs-6">
+                                <select>
+                                  <option>Adults</option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-12">
+                            <div class="form-group row">
+                              <div class="col-md-6">
+                                <label>Child</label>
+                              </div>
+                              <div class="col-xs-6">
+                                <select>
+                                  <option>Child</option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <p><a href="#">Check Availability</a></p>
+                              <p></p>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 about-us">
+            <h1><span>About US</span></h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptates et sunt ullam eligendi, magnam corporis sint voluptatem
+              exercitationem!
+            </p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Search.." />
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 quick-links">
+            <h1><span>Quick Links</span></h1>
+            <ul>
+              <li>
+                <i class="fas fa-arrow-circle-right"></i><a href="#"> Home</a>
+              </li>
+              <li>
+                <i class="fas fa-arrow-circle-right"></i
+                ><a href="#"> About Us</a>
+              </li>
+              <li>
+                <i class="fas fa-arrow-circle-right"></i><a href="#"> Blogs</a>
+              </li>
+              <li>
+                <i class="fas fa-arrow-circle-right"></i
+                ><a href="#"> Rooms and Pricing</a>
+              </li>
+              <li>
+                <i class="fas fa-arrow-circle-right"></i><a href="#"> Blogs</a>
+              </li>
+              <li>
+                <i class="fas fa-arrow-circle-right"></i
+                ><a href="#"> Gallery</a>
+              </li>
+              <li>
+                <i class="fas fa-arrow-circle-right"></i
+                ><a href="#"> Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 getconnected">
+            <h1><span>Get Connected</span></h1>
+            <p>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-google-plus-square"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </p>
+          </div>
+          <div class="col-md-3 col-sm-6 address">
+            <h1><span> Office Address</span></h1>
+            <ul>
+              <li>Om kaneshwor</li>
+              <li>Kathmandu, Nepal</li>
+              <li>
+                <i class="fas fa-phone-volume"></i
+                ><a href="tel:+01-4383296, 9808195000">
+                  01-4383296, 9808195000</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i><a href="#"> guras@gmail.com</a>
+              </li>
+              <li><i class="fas fa-fax"></i><a href="#">01-4383296</a></li>
+              <li>
+                <i class="fab fa-facebook-square"></i
+                ><a href="#"> www.facebook.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- copyright------ -->
+
+    <section class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              Copyright © 2020, All rights Reserved || Designed & Developed by
+              <a href="#">Guras Technology</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+      integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $('.count-number').counterUp({
+        delay: 10,
+        time: 1000,
+      });
+
+      /************rooms-slider****************/
+      (function ($) {
+        $.fn.slideshow = function (options) {
+          options = $.extend(
+            {
+              slides: '.slide',
+              speed: 3000,
+              easing: 'linear',
+            },
+            options
+          );
+
+          var timer = null;
+          var index = 0;
+
+          var slideTo = function (slide, element) {
+            var $currentSlide = $(options.slides, element).eq(slide);
+
+            $currentSlide
+              .stop(true, true)
+              .animate(
+                {
+                  opacity: 1,
+                },
+                options.speed,
+                options.easing
+              )
+              .siblings(options.slides)
+              .css('opacity', 0);
+          };
+
+          var autoSlide = function (element) {
+            timer = setInterval(function () {
+              index++;
+              if (index == $(options.slides, element).length) {
+                index = 0;
+              }
+              slideTo(index, element);
+            }, options.speed);
+          };
+
+          var startStop = function (element) {
+            element.hover(
+              function () {
+                clearInterval(timer);
+                timer = null;
+              },
+              function () {
+                autoSlide(element);
+              }
+            );
+          };
+
+          return this.each(function () {
+            var $element = $(this),
+              $previous = $(options.previous, $element),
+              $next = $(options.next, $element),
+              index = 0,
+              total = $(options.slides).length;
+
+            $(options.slides, $element).each(function () {
+              var $slide = $(this);
+              var image = $slide.data('image');
+              $slide.css('backgroundImage', 'url(' + image + ')');
+            });
+
+            autoSlide($element);
+            startStop($element);
+          });
+        };
+
+        $(function () {
+          $('#main-slider').slideshow();
+        });
+      })(jQuery);
+
+      // var slideIndex = 1;
+      // showSlides(slideIndex);
+
+      // function plusSlides(n) {
+      //   showSlides(slideIndex += n);
+      // }
+
+      // function currentSlide(n) {
+      //   showSlides(slideIndex = n);
+      // }
+
+      // function showSlides(n) {
+      //   var i;
+      //   var slides = document.getElementsByClassName("mySlides");
+      //   var dots = document.getElementsByClassName("dot");
+      //   if (n > slides.length) {slideIndex = 1}
+      //   if (n < 1) {slideIndex = slides.length}
+      //   for (i = 0; i < slides.length; i++) {
+      //       slides[i].style.display = "none";
+      //   }
+      //   for (i = 0; i < dots.length; i++) {
+      //       dots[i].className = dots[i].className.replace(" active", "");
+      //   }
+      //   slides[slideIndex-1].style.display = "block";
+      //   dots[slideIndex-1].className += " active";
+      // }
+    </script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
